@@ -222,6 +222,25 @@ Abra no browser do VPS:
 
 ---
 
+## 7-B. Arranque rápido com `start_all.bat` (recomendado)
+
+Depois de criados os dois `.env` (`mt5-bridge\.env` e `backend\.env`) e feito o `yarn build` do frontend uma vez, pode arrancar **tudo numa só execução** a partir da raiz do projeto:
+
+```powershell
+cd C:\Atlas
+.\start_all.bat
+```
+
+O script:
+1. Verifica Python e a presença dos dois `.env`.
+2. Arranca a **Ponte MT5** (porta 8002) numa janela própria (via `run.bat`).
+3. Cria o venv do **Backend** (1ª vez), instala dependências mínimas e arranca o uvicorn (porta 8001).
+4. Abre o **Dashboard** em `http://127.0.0.1:8001/`.
+
+As janelas "Atlas MT5 Bridge" e "Atlas Backend" ficam abertas com os logs ao vivo — feche-as para parar os serviços. (Para auto-arranque sem janelas, use os serviços NSSM da secção 8.)
+
+---
+
 ## 8. (Opcional) Transformar em serviços Windows (auto-arranque)
 
 Para os processos não dependerem de janelas RDP abertas, registe-os como serviços com **NSSM** (`https://nssm.cc`):
