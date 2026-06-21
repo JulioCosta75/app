@@ -85,7 +85,7 @@ notepad .env
 Edite o `.env` com as credenciais **reais** da conta que o terminal MT5 tem logada:
 
 ```ini
-MT5_LOGIN=5609382
+MT5_LOGIN=12345678
 MT5_PASSWORD=a_sua_password
 MT5_SERVER=NomeDoServidor-Live
 # MT5_TERMINAL_PATH=C:\Program Files\SeuBroker MT5\terminal64.exe   (só se tiver várias instalações)
@@ -190,7 +190,7 @@ curl http://127.0.0.1:8002/health
 Esperado (conta logada e Algo Trading ON):
 ```json
 {"status":"ok","terminal_connected":true,"account_logged_in":true,
- "trade_allowed":true,"login":5609382,"server":"...","last_error":null}
+ "trade_allowed":true,"login":12345678,"server":"...","last_error":null}
 ```
 Endpoint autenticado:
 ```powershell
