@@ -372,6 +372,7 @@ if MT5_MODE:
         from mt5_cache import MT5Cache
         _cache = MT5Cache(mongo_db)
     app.include_router(build_mt5_router(_cache))
+    app.include_router(api_router)
     logging.getLogger("server").info("MT5 mode ENABLED — store=%s", ATLAS_STORE)
 else:
     app.include_router(api_router)
