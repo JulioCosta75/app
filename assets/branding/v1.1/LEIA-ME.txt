@@ -1,0 +1,10 @@
+FORGE FACTORY LAB — v1.1 (sem alterações à v1)
+
+forge_logo_dark.png — logótipo transparente 1600×540 para fundos escuros (site, apresentações).
+forge_logo_light.png — logótipo transparente 1600×540 para fundos claros (documentos, propostas).
+forge_icon_32.png — ícone transparente 32×32 para favicon e interfaces pequenas.
+forge_cover_social_1500x500.png — capa 1500×500 para cabeçalhos de redes sociais; ajustar recorte a cada plataforma.
+forge_cover_mql5_1200x630.png — imagem de capa 1200×630 para materiais promocionais e partilhas MQL5; confirmar dimensões exigidas no perfil.
+
+SVG vetorial não incluído: os originais são imagens raster; converter automaticamente não garantiria a fidelidade exata ao desenho v1.
+Nota: a remoção do fundo dos PNG foi feita a partir da v1, com preservação do desenho e dimensões; pequenas diferenças de antialiasing podem ocorrer nos contornos.
